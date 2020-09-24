@@ -45,13 +45,16 @@ h6 {
 }
 
 .header__menu_nav li {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .header__menu_nav li a {
+  letter-spacing: -0.1px;
+  font-weight: 400;
   text-decoration: none;
   color: #333333;
+  font-size: 14px;
 }
 
 .head {
@@ -68,17 +71,34 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .head__top_logo {
   color: #66C05D;
   font-size: 36px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 4px;
+}
+
+.head__top_logo .logo_img {
+  display: block;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: url("../img/logo.png");
 }
 
 .head__top_info span {
   font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
 }
 
 .head__top_info button {
@@ -86,8 +106,185 @@ h6 {
   border-radius: 20px;
   background-color: transparent;
   border: 2px  solid #66C05D;
-  padding: 10px 15px;
+  font-weight: 400;
+  padding: 10px 25px;
+  margin-left: 35px;
+}
+
+.head__top_info button:hover {
+  background-color: #66C05D;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.head__bottom {
+  padding: 30px 0;
+}
+
+.head__bottom .bottom__menu li {
   margin-left: 20px;
+  margin-right: 20px;
+}
+
+.head__bottom .bottom__menu li a {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+.head hr {
+  border: none;
+  margin: 0;
+}
+
+.baner {
+  background-image: url("../img/utp.png");
+  padding-top: 215px;
+  padding-bottom: 205px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+}
+
+.baner p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 55px;
+  max-width: 315px;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: -22px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px  solid #ffffff;
+  padding: 8px 42px;
+  font-weight: 300;
+  letter-spacing: -0.15px;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+  color: #333333;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0 30px;
+}
+
+.grid-item-title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.title-h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.grid-item-img {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.grid-item-catalog {
+  text-align: center;
+}
+
+.grid-item .bg-white {
+  background-color: #fff;
+  padding: 15px 30px;
+}
+
+.grid-price {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.grid-btn {
+  border-radius: 20px;
+  background-color: #66c05d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 45px;
+}
+
+.grid-item-left {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.bg-green {
+  background-color: #66C05D;
+  color: #fff;
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-green input {
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.bg-green-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.bg-green-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  text-align: center;
+}
+
+.title-h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.grid-item-right {
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  max-width: 150px;
 }
 
 body {
@@ -100,9 +297,20 @@ body {
   font-style: 14px;
 }
 
+hr {
+  height: 1px;
+  background-color: #EFEFEF;
+}
+
 .wrapper {
   max-width: 1110px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
+}
+
+.webp .head__top_logo .logo_img {
+  background-image: url(../img/logo.webp);
+}
+
+.webp .baner {
+  background-image: url(../img/utp.webp);
 }

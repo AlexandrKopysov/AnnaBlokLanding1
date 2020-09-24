@@ -12,10 +12,16 @@ body{
     font-family: 'Roboto', sans-serif;
     font-style: 14px;
 }
+hr{
+  // color: #EFEFEF;
+  height: 1px;
+  background-color: #EFEFEF;  
+}
 
 .wrapper{
   max-width: 1110px;  
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 85px;
+  // padding-right: 15px;
+  // padding: 0px 30px;
   margin: 0 auto;
 }
